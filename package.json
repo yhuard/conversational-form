@@ -1,0 +1,24 @@
+{
+  "name": "conversational-form",
+  "version": "1.0.0",
+  "description": "[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/space10-community/conversational-form/blob/master/LICENSE.md)",
+  "main": "dist/conversational-form.js",
+  "directories": {
+    "doc": "docs",
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://yhuard@github.com/yhuard/conversational-form.git"
+  },
+  "author": "space10-community",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yhuard/conversational-form/issues"
+  },
+  "homepage": "https://github.com/yhuard/conversational-form#readme",
+  "private": true
+}
