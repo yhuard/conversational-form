@@ -1,9 +1,7 @@
 global.gulp = require('gulp');
 var fs = require('fs');
-var livereload = require('./gulp-tasks/node_modules/gulp-livereload');
-var gulpsync = require('./gulp-tasks/node_modules/gulp-sync')(global.gulp);
-
-var package = JSON.parse(fs.readFileSync('gulp-tasks/package.json'));
+var livereload = require('gulp-livereload');
+var gulpsync = require('gulp-sync')(global.gulp);
 
 // include task files
 require("./gulp-tasks/styles");
@@ -33,7 +31,7 @@ global.gulp.task('watch', ['bower', 'typescript', 'scripts', 'stylus', 'copy-ima
 	console.log("Watch task started");
 
 	global.gulp.watch(srcFolder + '/scripts/**/*.ts', ['typescript']);
-	
+
 	global.gulp.watch(srcFolder + '/scripts/**/*.js', ['scripts']);
 
 	global.gulp.watch(srcFolder + '/images/**/*', ['copy-images']);
