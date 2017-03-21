@@ -293,7 +293,7 @@ var cf;
     var ConversationalForm = (function () {
         function ConversationalForm(options) {
             this.version = "0.9.1";
-            this.cdnPath = "//conversational-form-091-0iznjsw.stackpathdns.com/";
+            this.cdnPath = "https://conversational-form-091-0iznjsw.stackpathdns.com/";
             this.isDevelopment = false;
             this.loadExternalStyleSheet = true;
             this.preventAutoAppend = false;
@@ -698,7 +698,7 @@ var cf;
         Helpers.getInnerTextOfElement = function (element) {
             var tmp = document.createElement("DIV");
             tmp.innerHTML = element.innerHTML;
-            // return 
+            // return
             var text = tmp.textContent || tmp.innerText || "";
             // text = String(text).replace('\t','');
             text = String(text).replace(/^\s+|\s+$/g, '');
@@ -714,7 +714,7 @@ var cf;
         };
         Helpers.setEmojiLib = function (lib, scriptSrc) {
             if (lib === void 0) { lib = "emojify"; }
-            if (scriptSrc === void 0) { scriptSrc = "//cdnjs.cloudflare.com/ajax/libs/emojify.js/1.1.0/js/emojify.min.js"; }
+            if (scriptSrc === void 0) { scriptSrc = "https://cdnjs.cloudflare.com/ajax/libs/emojify.js/1.1.0/js/emojify.min.js"; }
             var head = document.head || document.getElementsByTagName("head")[0];
             var script = document.createElement("script");
             script.type = "text/javascript";
@@ -1816,7 +1816,7 @@ var cf;
         function Dictionary(options) {
             // can be overwritten
             this.data = {
-                "user-image": "//conversational-form-static-0iznjsw.stackpathdns.com/src/images/human.png",
+                "user-image": "https://conversational-form-static-0iznjsw.stackpathdns.com/src/images/human.png",
                 "entry-not-found": "Dictionary item not found.",
                 "input-placeholder": "Type your answer here ...",
                 "group-placeholder": "Type to filter list ...",
@@ -1833,7 +1833,7 @@ var cf;
             };
             // can be overwriten
             this.robotData = {
-                "robot-image": "//conversational-form-static-0iznjsw.stackpathdns.com/src/images/robot.png",
+                "robot-image": "https://conversational-form-static-0iznjsw.stackpathdns.com/src/images/robot.png",
                 "input": "Please write some text.",
                 "text": "Please write some text.",
                 "checkbox": "Select as many as you want.",
@@ -1846,7 +1846,7 @@ var cf;
                 "general": "General1|General2|General3.."
             };
             Dictionary.instance = this;
-            // overwrite data if defined 
+            // overwrite data if defined
             if (options && options.data)
                 this.data = this.validateAndSetNewData(options.data, this.data);
             // overwrite user image

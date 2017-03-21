@@ -38,7 +38,7 @@ namespace cf {
 		public static animationsEnabled: boolean = true;
 		public static illustrateAppFlow: boolean = true;
 
-		private cdnPath: string = "//conversational-form-091-0iznjsw.stackpathdns.com/";
+		private cdnPath: string = "https://conversational-form-091-0iznjsw.stackpathdns.com/";
 		/**
 		 * createId
 		 * Id of the instance, to isolate events

@@ -25,18 +25,18 @@ namespace cf {
 		constructor(options?: IDictionaryOptions){
 			Dictionary.instance = this;
 
-			// overwrite data if defined 
+			// overwrite data if defined
 			if(options && options.data)
 				this.data = this.validateAndSetNewData(options.data, this.data);
 
 			// overwrite user image
 			if(options.userImage)
 				this.data["user-image"] = options.userImage;
-			
+
 			// overwrite robot image
 			if(options.robotImage)
 				this.robotData["robot-image"] = options.robotImage;
-			
+
 			// overwrite robot questions if defined
 			if(options && options.robotData)
 				this.robotData = this.validateAndSetNewData(options.robotData, this.robotData);
@@ -122,7 +122,7 @@ namespace cf {
 
 		// can be overwritten
 		protected data: any = {
-			"user-image": "//conversational-form-static-0iznjsw.stackpathdns.com/src/images/human.png",
+			"user-image": "https://conversational-form-static-0iznjsw.stackpathdns.com/src/images/human.png",
 			"entry-not-found": "Dictionary item not found.",
 			"input-placeholder": "Type your answer here ...",
 			"group-placeholder": "Type to filter list ...",
@@ -140,7 +140,7 @@ namespace cf {
 
 		// can be overwriten
 		protected robotData: any = {
-			"robot-image": "//conversational-form-static-0iznjsw.stackpathdns.com/src/images/robot.png",
+			"robot-image": "https://conversational-form-static-0iznjsw.stackpathdns.com/src/images/robot.png",
 			"input": "Please write some text.",
 			"text": "Please write some text.",
 			"checkbox": "Select as many as you want.",

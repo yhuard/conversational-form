@@ -35,11 +35,11 @@ namespace cf {
 		public static getInnerTextOfElement(element: Element): string {
 			const tmp = document.createElement("DIV");
 			tmp.innerHTML = element.innerHTML;
-			// return 
+			// return
 			let text: string = tmp.textContent || tmp.innerText || "";
 			// text = String(text).replace('\t','');
 			text = String(text).replace(/^\s+|\s+$/g, '');
-			
+
 			return text;
 		}
 
@@ -57,15 +57,15 @@ namespace cf {
 			fileReader: () => {
 				if((<any>window).File && (<any>window).FileReader && (<any>window).FileList && window.Blob)
 					return true;
-				
+
 				return false;
 			}
 		}
 
 		private static emojilib: any = null;
-		public static setEmojiLib(lib: string = "emojify", scriptSrc: string = "//cdnjs.cloudflare.com/ajax/libs/emojify.js/1.1.0/js/emojify.min.js"){
+		public static setEmojiLib(lib: string = "emojify", scriptSrc: string = "https://cdnjs.cloudflare.com/ajax/libs/emojify.js/1.1.0/js/emojify.min.js"){
 			const head: HTMLHeadElement = document.head || document.getElementsByTagName("head")[0];
-			
+
 			const script: HTMLScriptElement = document.createElement("script");
 			script.type = "text/javascript";
 			script.onload = function() {
