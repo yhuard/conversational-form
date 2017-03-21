@@ -8,9 +8,9 @@
     "example": "examples"
   },
   "scripts": {
+    "bootstrap": "cd src/scripts && typings install",
     "build": "gulp",
     "dist": "gulp dist",
-    "postinstall": "cd src/scripts && typings install",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
