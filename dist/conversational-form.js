@@ -665,6 +665,7 @@ else {
         cf.ConversationalForm.autoStartTheConversation();
     }, false);
 }
+window.cf = cf;
 
 
 // namespace
