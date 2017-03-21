@@ -503,5 +503,3 @@ if(document.readyState == "complete"){
 		cf.ConversationalForm.autoStartTheConversation();
 	}, false);
 }
-
-(<any>window).cf = cf;
